@@ -1,0 +1,271 @@
+19/07/19 08:42:38 INFO SparkSqlParser: Parsing command: SELECT DISTINCT `beer_full`
+FROM `beer_data_fin`
+19/07/19 08:42:38 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enable is set to true, but current version of codegened fast hashmap does not support this aggregate.
+19/07/19 08:42:38 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enable is set to true, but current version of codegened fast hashmap does not support this aggregate.
+19/07/19 08:42:38 INFO SparkContext: Starting job: zipWithIndex at utils.scala:400
+19/07/19 08:42:38 INFO DAGScheduler: Registering RDD 227 (rdd at utils.scala:400)
+19/07/19 08:42:38 INFO DAGScheduler: Got job 34 (zipWithIndex at utils.scala:400) with 11 output partitions
+19/07/19 08:42:38 INFO DAGScheduler: Final stage: ResultStage 74 (zipWithIndex at utils.scala:400)
+19/07/19 08:42:38 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 73)
+19/07/19 08:42:38 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 73)
+19/07/19 08:42:38 INFO DAGScheduler: Submitting ShuffleMapStage 73 (MapPartitionsRDD[227] at rdd at utils.scala:400), which has no missing parents
+19/07/19 08:42:38 INFO MemoryStore: Block broadcast_63 stored as values in memory (estimated size 23.5 KB, free 10.3 GB)
+19/07/19 08:42:38 INFO MemoryStore: Block broadcast_63_piece0 stored as bytes in memory (estimated size 11.6 KB, free 10.3 GB)
+19/07/19 08:42:38 INFO BlockManagerInfo: Added broadcast_63_piece0 in memory on 127.0.0.1:58422 (size: 11.6 KB, free: 10.3 GB)
+19/07/19 08:42:38 INFO SparkContext: Created broadcast 63 from broadcast at DAGScheduler.scala:996
+19/07/19 08:42:38 INFO DAGScheduler: Submitting 12 missing tasks from ShuffleMapStage 73 (MapPartitionsRDD[227] at rdd at utils.scala:400)
+19/07/19 08:42:38 INFO TaskSchedulerImpl: Adding task set 73.0 with 12 tasks
+19/07/19 08:42:38 INFO TaskSetManager: Starting task 0.0 in stage 73.0 (TID 539, localhost, executor driver, partition 0, PROCESS_LOCAL, 6568 bytes)
+19/07/19 08:42:38 INFO TaskSetManager: Starting task 1.0 in stage 73.0 (TID 540, localhost, executor driver, partition 1, PROCESS_LOCAL, 6568 bytes)
+19/07/19 08:42:38 INFO TaskSetManager: Starting task 2.0 in stage 73.0 (TID 541, localhost, executor driver, partition 2, PROCESS_LOCAL, 6568 bytes)
+19/07/19 08:42:38 INFO TaskSetManager: Starting task 3.0 in stage 73.0 (TID 542, localhost, executor driver, partition 3, PROCESS_LOCAL, 6568 bytes)
+19/07/19 08:42:38 INFO TaskSetManager: Starting task 4.0 in stage 73.0 (TID 543, localhost, executor driver, partition 4, PROCESS_LOCAL, 6568 bytes)
+19/07/19 08:42:38 INFO TaskSetManager: Starting task 5.0 in stage 73.0 (TID 544, localhost, executor driver, partition 5, PROCESS_LOCAL, 6568 bytes)
+19/07/19 08:42:38 INFO TaskSetManager: Starting task 6.0 in stage 73.0 (TID 545, localhost, executor driver, partition 6, PROCESS_LOCAL, 6568 bytes)
+19/07/19 08:42:38 INFO TaskSetManager: Starting task 7.0 in stage 73.0 (TID 546, localhost, executor driver, partition 7, PROCESS_LOCAL, 6568 bytes)
+19/07/19 08:42:38 INFO TaskSetManager: Starting task 8.0 in stage 73.0 (TID 547, localhost, executor driver, partition 8, PROCESS_LOCAL, 6568 bytes)
+19/07/19 08:42:38 INFO TaskSetManager: Starting task 9.0 in stage 73.0 (TID 548, localhost, executor driver, partition 9, PROCESS_LOCAL, 6568 bytes)
+19/07/19 08:42:38 INFO TaskSetManager: Starting task 10.0 in stage 73.0 (TID 549, localhost, executor driver, partition 10, PROCESS_LOCAL, 6568 bytes)
+19/07/19 08:42:38 INFO TaskSetManager: Starting task 11.0 in stage 73.0 (TID 550, localhost, executor driver, partition 11, PROCESS_LOCAL, 6568 bytes)
+19/07/19 08:42:38 INFO Executor: Running task 0.0 in stage 73.0 (TID 539)
+19/07/19 08:42:38 INFO Executor: Running task 1.0 in stage 73.0 (TID 540)
+19/07/19 08:42:38 INFO Executor: Running task 3.0 in stage 73.0 (TID 542)
+19/07/19 08:42:38 INFO Executor: Running task 2.0 in stage 73.0 (TID 541)
+19/07/19 08:42:38 INFO Executor: Running task 4.0 in stage 73.0 (TID 543)
+19/07/19 08:42:38 INFO Executor: Running task 5.0 in stage 73.0 (TID 544)
+19/07/19 08:42:38 INFO Executor: Running task 6.0 in stage 73.0 (TID 545)
+19/07/19 08:42:38 INFO Executor: Running task 7.0 in stage 73.0 (TID 546)
+19/07/19 08:42:38 INFO Executor: Running task 8.0 in stage 73.0 (TID 547)
+19/07/19 08:42:38 INFO Executor: Running task 10.0 in stage 73.0 (TID 549)
+19/07/19 08:42:38 INFO Executor: Running task 9.0 in stage 73.0 (TID 548)
+19/07/19 08:42:38 INFO Executor: Running task 11.0 in stage 73.0 (TID 550)
+19/07/19 08:42:38 INFO BlockManager: Found block rdd_37_8 locally
+19/07/19 08:42:38 INFO BlockManager: Found block rdd_37_0 locally
+19/07/19 08:42:38 INFO BlockManager: Found block rdd_37_5 locally
+19/07/19 08:42:38 INFO BlockManager: Found block rdd_37_10 locally
+19/07/19 08:42:38 INFO BlockManager: Found block rdd_37_7 locally
+19/07/19 08:42:38 INFO BlockManager: Found block rdd_37_9 locally
+19/07/19 08:42:38 INFO BlockManager: Found block rdd_37_11 locally
+19/07/19 08:42:38 INFO BlockManager: Found block rdd_37_4 locally
+19/07/19 08:42:38 INFO BlockManager: Found block rdd_37_3 locally
+19/07/19 08:42:38 INFO BlockManager: Found block rdd_37_6 locally
+19/07/19 08:42:38 INFO BlockManager: Found block rdd_37_1 locally
+19/07/19 08:42:38 INFO BlockManager: Found block rdd_37_2 locally
+19/07/19 08:42:39 INFO Executor: Finished task 11.0 in stage 73.0 (TID 550). 2554 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 11.0 in stage 73.0 (TID 550) in 547 ms on localhost (executor driver) (1/12)
+19/07/19 08:42:39 INFO Executor: Finished task 7.0 in stage 73.0 (TID 546). 2467 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 7.0 in stage 73.0 (TID 546) in 595 ms on localhost (executor driver) (2/12)
+19/07/19 08:42:39 INFO Executor: Finished task 3.0 in stage 73.0 (TID 542). 2467 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 3.0 in stage 73.0 (TID 542) in 601 ms on localhost (executor driver) (3/12)
+19/07/19 08:42:39 INFO Executor: Finished task 8.0 in stage 73.0 (TID 547). 2467 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 8.0 in stage 73.0 (TID 547) in 608 ms on localhost (executor driver) (4/12)
+19/07/19 08:42:39 INFO Executor: Finished task 0.0 in stage 73.0 (TID 539). 2554 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 0.0 in stage 73.0 (TID 539) in 618 ms on localhost (executor driver) (5/12)
+19/07/19 08:42:39 INFO Executor: Finished task 10.0 in stage 73.0 (TID 549). 2467 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 10.0 in stage 73.0 (TID 549) in 619 ms on localhost (executor driver) (6/12)
+19/07/19 08:42:39 INFO Executor: Finished task 9.0 in stage 73.0 (TID 548). 2467 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 9.0 in stage 73.0 (TID 548) in 624 ms on localhost (executor driver) (7/12)
+19/07/19 08:42:39 INFO Executor: Finished task 5.0 in stage 73.0 (TID 544). 2467 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 5.0 in stage 73.0 (TID 544) in 627 ms on localhost (executor driver) (8/12)
+19/07/19 08:42:39 INFO Executor: Finished task 2.0 in stage 73.0 (TID 541). 2467 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 2.0 in stage 73.0 (TID 541) in 649 ms on localhost (executor driver) (9/12)
+19/07/19 08:42:39 INFO Executor: Finished task 1.0 in stage 73.0 (TID 540). 2467 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 1.0 in stage 73.0 (TID 540) in 699 ms on localhost (executor driver) (10/12)
+19/07/19 08:42:39 INFO Executor: Finished task 6.0 in stage 73.0 (TID 545). 2467 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 6.0 in stage 73.0 (TID 545) in 714 ms on localhost (executor driver) (11/12)
+19/07/19 08:42:39 INFO Executor: Finished task 4.0 in stage 73.0 (TID 543). 2467 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 4.0 in stage 73.0 (TID 543) in 770 ms on localhost (executor driver) (12/12)
+19/07/19 08:42:39 INFO TaskSchedulerImpl: Removed TaskSet 73.0, whose tasks have all completed, from pool 
+19/07/19 08:42:39 INFO DAGScheduler: ShuffleMapStage 73 (rdd at utils.scala:400) finished in 0.777 s
+19/07/19 08:42:39 INFO DAGScheduler: looking for newly runnable stages
+19/07/19 08:42:39 INFO DAGScheduler: running: Set()
+19/07/19 08:42:39 INFO DAGScheduler: waiting: Set(ResultStage 74)
+19/07/19 08:42:39 INFO DAGScheduler: failed: Set()
+19/07/19 08:42:39 INFO DAGScheduler: Submitting ResultStage 74 (MapPartitionsRDD[231] at rdd at utils.scala:400), which has no missing parents
+19/07/19 08:42:39 INFO MemoryStore: Block broadcast_64 stored as values in memory (estimated size 16.0 KB, free 10.3 GB)
+19/07/19 08:42:39 INFO MemoryStore: Block broadcast_64_piece0 stored as bytes in memory (estimated size 7.5 KB, free 10.3 GB)
+19/07/19 08:42:39 INFO BlockManagerInfo: Added broadcast_64_piece0 in memory on 127.0.0.1:58422 (size: 7.5 KB, free: 10.3 GB)
+19/07/19 08:42:39 INFO SparkContext: Created broadcast 64 from broadcast at DAGScheduler.scala:996
+19/07/19 08:42:39 INFO DAGScheduler: Submitting 11 missing tasks from ResultStage 74 (MapPartitionsRDD[231] at rdd at utils.scala:400)
+19/07/19 08:42:39 INFO TaskSchedulerImpl: Adding task set 74.0 with 11 tasks
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 0.0 in stage 74.0 (TID 551, localhost, executor driver, partition 0, ANY, 5922 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 1.0 in stage 74.0 (TID 552, localhost, executor driver, partition 1, ANY, 5922 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 2.0 in stage 74.0 (TID 553, localhost, executor driver, partition 2, ANY, 5922 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 3.0 in stage 74.0 (TID 554, localhost, executor driver, partition 3, ANY, 5922 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 4.0 in stage 74.0 (TID 555, localhost, executor driver, partition 4, ANY, 5922 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 5.0 in stage 74.0 (TID 556, localhost, executor driver, partition 5, ANY, 5922 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 6.0 in stage 74.0 (TID 557, localhost, executor driver, partition 6, ANY, 5922 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 7.0 in stage 74.0 (TID 558, localhost, executor driver, partition 7, ANY, 5922 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 8.0 in stage 74.0 (TID 559, localhost, executor driver, partition 8, ANY, 5922 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 9.0 in stage 74.0 (TID 560, localhost, executor driver, partition 9, ANY, 5922 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 10.0 in stage 74.0 (TID 561, localhost, executor driver, partition 10, ANY, 5922 bytes)
+19/07/19 08:42:39 INFO Executor: Running task 8.0 in stage 74.0 (TID 559)
+19/07/19 08:42:39 INFO Executor: Running task 5.0 in stage 74.0 (TID 556)
+19/07/19 08:42:39 INFO Executor: Running task 1.0 in stage 74.0 (TID 552)
+19/07/19 08:42:39 INFO Executor: Running task 9.0 in stage 74.0 (TID 560)
+19/07/19 08:42:39 INFO Executor: Running task 6.0 in stage 74.0 (TID 557)
+19/07/19 08:42:39 INFO Executor: Running task 0.0 in stage 74.0 (TID 551)
+19/07/19 08:42:39 INFO Executor: Running task 2.0 in stage 74.0 (TID 553)
+19/07/19 08:42:39 INFO Executor: Running task 7.0 in stage 74.0 (TID 558)
+19/07/19 08:42:39 INFO Executor: Running task 10.0 in stage 74.0 (TID 561)
+19/07/19 08:42:39 INFO Executor: Running task 4.0 in stage 74.0 (TID 555)
+19/07/19 08:42:39 INFO Executor: Running task 3.0 in stage 74.0 (TID 554)
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+19/07/19 08:42:39 INFO Executor: Finished task 10.0 in stage 74.0 (TID 561). 2773 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 10.0 in stage 74.0 (TID 561) in 49 ms on localhost (executor driver) (1/11)
+19/07/19 08:42:39 INFO Executor: Finished task 9.0 in stage 74.0 (TID 560). 2773 bytes result sent to driver
+19/07/19 08:42:39 INFO Executor: Finished task 7.0 in stage 74.0 (TID 558). 2773 bytes result sent to driver
+19/07/19 08:42:39 INFO Executor: Finished task 8.0 in stage 74.0 (TID 559). 2773 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 9.0 in stage 74.0 (TID 560) in 51 ms on localhost (executor driver) (2/11)
+19/07/19 08:42:39 INFO Executor: Finished task 0.0 in stage 74.0 (TID 551). 2773 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 7.0 in stage 74.0 (TID 558) in 51 ms on localhost (executor driver) (3/11)
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 8.0 in stage 74.0 (TID 559) in 52 ms on localhost (executor driver) (4/11)
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 0.0 in stage 74.0 (TID 551) in 59 ms on localhost (executor driver) (5/11)
+19/07/19 08:42:39 INFO Executor: Finished task 2.0 in stage 74.0 (TID 553). 2773 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 2.0 in stage 74.0 (TID 553) in 58 ms on localhost (executor driver) (6/11)
+19/07/19 08:42:39 INFO Executor: Finished task 3.0 in stage 74.0 (TID 554). 2773 bytes result sent to driver
+19/07/19 08:42:39 INFO Executor: Finished task 5.0 in stage 74.0 (TID 556). 2773 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 3.0 in stage 74.0 (TID 554) in 58 ms on localhost (executor driver) (7/11)
+19/07/19 08:42:39 INFO Executor: Finished task 6.0 in stage 74.0 (TID 557). 2773 bytes result sent to driver
+19/07/19 08:42:39 INFO Executor: Finished task 4.0 in stage 74.0 (TID 555). 2773 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 5.0 in stage 74.0 (TID 556) in 55 ms on localhost (executor driver) (8/11)
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 6.0 in stage 74.0 (TID 557) in 54 ms on localhost (executor driver) (9/11)
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 4.0 in stage 74.0 (TID 555) in 55 ms on localhost (executor driver) (10/11)
+19/07/19 08:42:39 INFO Executor: Finished task 1.0 in stage 74.0 (TID 552). 2773 bytes result sent to driver
+19/07/19 08:42:39 INFO TaskSetManager: Finished task 1.0 in stage 74.0 (TID 552) in 66 ms on localhost (executor driver) (11/11)
+19/07/19 08:42:39 INFO TaskSchedulerImpl: Removed TaskSet 74.0, whose tasks have all completed, from pool 
+19/07/19 08:42:39 INFO DAGScheduler: ResultStage 74 (zipWithIndex at utils.scala:400) finished in 0.068 s
+19/07/19 08:42:39 INFO DAGScheduler: Job 34 finished: zipWithIndex at utils.scala:400, took 0.937442 s
+19/07/19 08:42:39 INFO CatalystSqlParser: Parsing command: double
+19/07/19 08:42:39 INFO SparkSqlParser: Parsing command: sparklyr_tmp_bf23224a3ea6
+19/07/19 08:42:39 INFO SparkSqlParser: Parsing command: SELECT *
+FROM `sparklyr_tmp_bf23224a3ea6` AS `zzz6`
+WHERE (0 = 1)
+19/07/19 08:42:39 INFO SparkSqlParser: Parsing command: SELECT *
+FROM `sparklyr_tmp_bf23224a3ea6`
+19/07/19 08:42:39 INFO SparkSqlParser: Parsing command: SELECT *
+FROM `sparklyr_tmp_bf23224a3ea6`
+19/07/19 08:42:39 INFO SparkContext: Starting job: collect at utils.scala:204
+19/07/19 08:42:39 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 26 is 175 bytes
+19/07/19 08:42:39 INFO DAGScheduler: Got job 35 (collect at utils.scala:204) with 12 output partitions
+19/07/19 08:42:39 INFO DAGScheduler: Final stage: ResultStage 76 (collect at utils.scala:204)
+19/07/19 08:42:39 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 75)
+19/07/19 08:42:39 INFO DAGScheduler: Missing parents: List()
+19/07/19 08:42:39 INFO DAGScheduler: Submitting ResultStage 76 (MapPartitionsRDD[237] at collect at utils.scala:204), which has no missing parents
+19/07/19 08:42:39 INFO MemoryStore: Block broadcast_65 stored as values in memory (estimated size 20.6 KB, free 10.3 GB)
+19/07/19 08:42:39 INFO MemoryStore: Block broadcast_65_piece0 stored as bytes in memory (estimated size 9.6 KB, free 10.3 GB)
+19/07/19 08:42:39 INFO BlockManagerInfo: Added broadcast_65_piece0 in memory on 127.0.0.1:58422 (size: 9.6 KB, free: 10.3 GB)
+19/07/19 08:42:39 INFO SparkContext: Created broadcast 65 from broadcast at DAGScheduler.scala:996
+19/07/19 08:42:39 INFO DAGScheduler: Submitting 12 missing tasks from ResultStage 76 (MapPartitionsRDD[237] at collect at utils.scala:204)
+19/07/19 08:42:39 INFO TaskSchedulerImpl: Adding task set 76.0 with 12 tasks
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 0.0 in stage 76.0 (TID 562, localhost, executor driver, partition 0, ANY, 6057 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 1.0 in stage 76.0 (TID 563, localhost, executor driver, partition 1, ANY, 6057 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 2.0 in stage 76.0 (TID 564, localhost, executor driver, partition 2, ANY, 6057 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 3.0 in stage 76.0 (TID 565, localhost, executor driver, partition 3, ANY, 6057 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 4.0 in stage 76.0 (TID 566, localhost, executor driver, partition 4, ANY, 6057 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 5.0 in stage 76.0 (TID 567, localhost, executor driver, partition 5, ANY, 6057 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 6.0 in stage 76.0 (TID 568, localhost, executor driver, partition 6, ANY, 6057 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 7.0 in stage 76.0 (TID 569, localhost, executor driver, partition 7, ANY, 6057 bytes)
+19/07/19 08:42:39 INFO TaskSetManager: Starting task 8.0 in stage 76.0 (TID 570, localhost, executor driver, partition 8, ANY, 6057 bytes)
+19/07/19 08:42:40 INFO TaskSetManager: Starting task 9.0 in stage 76.0 (TID 571, localhost, executor driver, partition 9, ANY, 6057 bytes)
+19/07/19 08:42:40 INFO TaskSetManager: Starting task 10.0 in stage 76.0 (TID 572, localhost, executor driver, partition 10, ANY, 6057 bytes)
+19/07/19 08:42:40 INFO TaskSetManager: Starting task 11.0 in stage 76.0 (TID 573, localhost, executor driver, partition 11, ANY, 6057 bytes)
+19/07/19 08:42:40 INFO Executor: Running task 11.0 in stage 76.0 (TID 573)
+19/07/19 08:42:40 INFO Executor: Running task 2.0 in stage 76.0 (TID 564)
+19/07/19 08:42:40 INFO Executor: Running task 10.0 in stage 76.0 (TID 572)
+19/07/19 08:42:40 INFO Executor: Running task 5.0 in stage 76.0 (TID 567)
+19/07/19 08:42:40 INFO Executor: Running task 8.0 in stage 76.0 (TID 570)
+19/07/19 08:42:40 INFO Executor: Running task 9.0 in stage 76.0 (TID 571)
+19/07/19 08:42:40 INFO Executor: Running task 3.0 in stage 76.0 (TID 565)
+19/07/19 08:42:40 INFO Executor: Running task 4.0 in stage 76.0 (TID 566)
+19/07/19 08:42:40 INFO Executor: Running task 7.0 in stage 76.0 (TID 569)
+19/07/19 08:42:40 INFO Executor: Running task 0.0 in stage 76.0 (TID 562)
+19/07/19 08:42:40 INFO Executor: Running task 1.0 in stage 76.0 (TID 563)
+19/07/19 08:42:40 INFO Executor: Running task 6.0 in stage 76.0 (TID 568)
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Getting 12 non-empty blocks out of 12 blocks
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+19/07/19 08:42:40 INFO Executor: Finished task 11.0 in stage 76.0 (TID 573). 76803 bytes result sent to driver
+19/07/19 08:42:40 INFO TaskSetManager: Finished task 11.0 in stage 76.0 (TID 573) in 306 ms on localhost (executor driver) (1/12)
+19/07/19 08:42:40 INFO Executor: Finished task 8.0 in stage 76.0 (TID 570). 74811 bytes result sent to driver
+19/07/19 08:42:40 INFO TaskSetManager: Finished task 8.0 in stage 76.0 (TID 570) in 354 ms on localhost (executor driver) (2/12)
+19/07/19 08:42:40 INFO Executor: Finished task 2.0 in stage 76.0 (TID 564). 77071 bytes result sent to driver
+19/07/19 08:42:40 INFO Executor: Finished task 10.0 in stage 76.0 (TID 572). 77561 bytes result sent to driver
+19/07/19 08:42:40 INFO TaskSetManager: Finished task 2.0 in stage 76.0 (TID 564) in 415 ms on localhost (executor driver) (3/12)
+19/07/19 08:42:40 INFO Executor: Finished task 9.0 in stage 76.0 (TID 571). 77185 bytes result sent to driver
+19/07/19 08:42:40 INFO TaskSetManager: Finished task 10.0 in stage 76.0 (TID 572) in 422 ms on localhost (executor driver) (4/12)
+19/07/19 08:42:40 INFO TaskSetManager: Finished task 9.0 in stage 76.0 (TID 571) in 430 ms on localhost (executor driver) (5/12)
+19/07/19 08:42:40 INFO Executor: Finished task 7.0 in stage 76.0 (TID 569). 79475 bytes result sent to driver
+19/07/19 08:42:40 INFO TaskSetManager: Finished task 7.0 in stage 76.0 (TID 569) in 485 ms on localhost (executor driver) (6/12)
+19/07/19 08:42:40 INFO Executor: Finished task 6.0 in stage 76.0 (TID 568). 75465 bytes result sent to driver
+19/07/19 08:42:40 INFO Executor: Finished task 4.0 in stage 76.0 (TID 566). 74066 bytes result sent to driver
+19/07/19 08:42:40 INFO Executor: Finished task 5.0 in stage 76.0 (TID 567). 75964 bytes result sent to driver
+19/07/19 08:42:40 INFO TaskSetManager: Finished task 4.0 in stage 76.0 (TID 566) in 503 ms on localhost (executor driver) (7/12)
+19/07/19 08:42:40 INFO Executor: Finished task 1.0 in stage 76.0 (TID 563). 74299 bytes result sent to driver
+19/07/19 08:42:40 INFO TaskSetManager: Finished task 6.0 in stage 76.0 (TID 568) in 504 ms on localhost (executor driver) (8/12)
+19/07/19 08:42:40 INFO TaskSetManager: Finished task 5.0 in stage 76.0 (TID 567) in 506 ms on localhost (executor driver) (9/12)
+19/07/19 08:42:40 INFO TaskSetManager: Finished task 1.0 in stage 76.0 (TID 563) in 513 ms on localhost (executor driver) (10/12)
+19/07/19 08:42:40 INFO Executor: Finished task 3.0 in stage 76.0 (TID 565). 79552 bytes result sent to driver
+19/07/19 08:42:40 INFO TaskSetManager: Finished task 3.0 in stage 76.0 (TID 565) in 513 ms on localhost (executor driver) (11/12)
+19/07/19 08:42:40 INFO Executor: Finished task 0.0 in stage 76.0 (TID 562). 74656 bytes result sent to driver
+19/07/19 08:42:40 INFO TaskSetManager: Finished task 0.0 in stage 76.0 (TID 562) in 517 ms on localhost (executor driver) (12/12)
+19/07/19 08:42:40 INFO TaskSchedulerImpl: Removed TaskSet 76.0, whose tasks have all completed, from pool 
+19/07/19 08:42:40 INFO DAGScheduler: ResultStage 76 (collect at utils.scala:204) finished in 0.517 s
+19/07/19 08:42:40 INFO DAGScheduler: Job 35 finished: collect at utils.scala:204, took 0.553441 s
+19/07/19 08:59:16 INFO ContextCleaner: Cleaned accumulator 14588
+19/07/19 08:59:16 INFO ContextCleaner: Cleaned accumulator 14637
+19/07/19 08:59:16 INFO BlockManagerInfo: Removed broadcast_65_piece0 on 127.0.0.1:58422 in memory (size: 9.6 KB, free: 10.3 GB)
+19/07/19 08:59:16 INFO BlockManagerInfo: Removed broadcast_64_piece0 on 127.0.0.1:58422 in memory (size: 7.5 KB, free: 10.3 GB)
+19/07/19 08:59:16 INFO BlockManagerInfo: Removed broadcast_63_piece0 on 127.0.0.1:58422 in memory (size: 11.6 KB, free: 10.3 GB)
+19/07/19 09:10:55 INFO SparkContext: Invoking stop() from shutdown hook
+19/07/19 09:10:55 INFO SparkUI: Stopped Spark web UI at http://127.0.0.1:4040
+19/07/19 09:10:55 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+19/07/19 09:10:55 INFO MemoryStore: MemoryStore cleared
+19/07/19 09:10:55 INFO BlockManager: BlockManager stopped
+19/07/19 09:10:55 INFO BlockManagerMaster: BlockManagerMaster stopped
+19/07/19 09:10:55 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+19/07/19 09:10:55 INFO SparkContext: Successfully stopped SparkContext
+19/07/19 09:10:55 INFO ShutdownHookManager: Shutdown hook called
+19/07/19 09:10:55 INFO ShutdownHookManager: Deleting directory /private/var/folders/ln/01z62wd90h71tmx3m2v5qxrm0000gn/T/spark-eb36f68e-d5f9-4250-8c26-3bd95d89a20e

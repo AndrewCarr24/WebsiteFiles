@@ -1,0 +1,8 @@
+theme = "tale-hugo"
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Data Science Diarist"
+[params]
+  syntaxHighlighter = "highlight.js"
+
+  customJS = ['https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js']
