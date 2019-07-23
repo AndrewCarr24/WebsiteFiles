@@ -1,5 +1,5 @@
 theme = "tale-hugo"
-baseURL = "http://datadiarist.github.io/"
+baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Data Science Diarist"
 [params]
