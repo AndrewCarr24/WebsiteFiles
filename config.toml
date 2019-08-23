@@ -3,13 +3,12 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Data Science Diarist"
 [params]
-  syntaxHighlighter = "highlight.js"
+highlightjsVersion = "9.11.0"
+highlightjsCDN = "//cdn.bootcss.com"
+highlightjsLang = ["r", "yaml"]
+highlightjsTheme = "github"
+
+#  syntaxHighlighter = "highlight.js"
 
 
   customCSS = ["css/table.css"]
-
-
-  highlightjsVersion = "9.6.0"
-    highlightjsCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r", "yaml", "tex", "python"]
-    highlightjsTheme = "github
