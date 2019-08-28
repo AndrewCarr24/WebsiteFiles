@@ -10,3 +10,8 @@ highlightjsTheme = "github"
 rssLimit = 10
 
   customCSS = ["css/table.css"]
+  [outputs]
+    home = [ "HTML", "CSS", "RSS" ]
+    section = [ "HTML", "RSS" ]
+    taxonomy = [ "HTML", "RSS" ]
+    taxonomyTerm = [ "HTML", "RSS" ]
