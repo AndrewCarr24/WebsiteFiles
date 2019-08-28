@@ -1,3 +1,8 @@
+<head>{{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}</head>
+
+
 <nav class="nav">
   <div class="nav-container">
     <a href="/">
