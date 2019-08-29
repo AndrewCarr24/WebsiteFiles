@@ -2,6 +2,7 @@ theme = "tale-hugo"
 baseURL = "https://datadiarist.github.io/"
 languageCode = "en-us"
 title = "Data Science Diarist"
+publishDir = "docs"
 [params]
 highlightjsVersion = "9.11.0"
 highlightjsCDN = "//cdn.bootcss.com"
